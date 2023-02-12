@@ -1,0 +1,75 @@
+body{
+  background-color: lightyellow !important;
+}
+.piac{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 40px 0;
+}  
+.piac-auto{
+    margin: 15px 15px 0 15px;
+    max-width: 300px;
+    cursor: pointer;
+}
+.piac-ar {
+  color: grey;
+  font-size: 20px;
+  margin: 10px 0;
+}
+.piac-nev{
+  margin: 10px 0;
+}
+.piac-leiras{
+  margin: 10px 0;
+}
+.piac-text{
+  text-align: center;
+  margin: 10px;
+}
+.card {
+  background-color: rgb(255, 255, 255, 0.6);
+  box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.5);
+  max-width: 330px;
+  text-align: center;
+  margin: 15px 25px;
+}
+.card a {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.card a:hover {
+  opacity: 0.7;
+}
+.modal-erdeklodes label{
+  float: left;
+}
+.modal-erdeklodes p{
+  margin-left: 15vh;
+}
+.modal-erdeklodes iframe{
+  padding: 10px 15px 15px 15px;
+  border: none;
+}
+@media print{
+  nav{
+    display: none;
+  }
+  footer{
+    display: none;
+  }
+  .links{
+    display: none;
+  }
+  .piac>.elrejt{
+    display: none;
+  }
+}

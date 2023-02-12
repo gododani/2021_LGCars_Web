@@ -1,0 +1,130 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .index, .piachtml{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f1f1;
+    padding-top: 46px;
+    padding-bottom: 46px;
+    position: relative;
+    min-height: 100vh;
+  }
+  header {
+    z-index: 1;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    height: 46px;
+    top: 0;
+    width: 100%;
+    position: fixed;
+  }
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    height: 46px;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    position: fixed;
+  }
+  footer>p{
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif ;
+  }
+  ul{
+      position: fixed;
+      width: 100%;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  .nav-lista{
+      top: 0;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+  }
+  .lista-elemek{
+      float: right;
+  }
+  .links, .web-name{
+      display: table;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+  .links:hover{
+      background-color: #111;
+  }
+  .aktiv{
+    background-color: dimgray ;
+  }
+  .web-name{
+    float: left;
+    font-size: 30px;
+    padding: 4px 30px 4px 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 0px 3px 3px white;
+    letter-spacing: 2px;
+  }
+  .img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -25px;
+    left: -10%;
+    display: block;
+    transform: rotateY(180deg);
+    animation: kicsikocsi1  10s linear 0s infinite normal;
+    z-index: 120;
+  }
+  .img2{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: -30px;
+    right: -10%;
+    display: block;
+    animation: kicsikocsi2 10s linear 5s infinite normal;
+  }
+  @keyframes kicsikocsi1{
+    50%, 100%{
+      left: 110%;
+    }
+  }
+  @keyframes kicsikocsi2{
+    50%, 100%{
+      right: 110%;
+    }
+  }
+@media (max-width:770px){
+  .lista-elemek{
+    float:left;
+  }
+  .links{
+    width: 100% !important;
+    vertical-align: center;
+    float: left;
+  }
+  .indexm, .piachtml, .viszhtml{
+    padding-top: 100px !important;
+  }
+  .web-name{
+    width: 100%;
+    font-size: 40px;
+    margin: 0 auto;
+  }
+  .article{
+    height: 800px;
+  }
+}
+@media (max-width: 600px){
+  .index, .piachtml, .viszhtml{
+    padding-top: 150px;
+  }
+}

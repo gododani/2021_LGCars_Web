@@ -1,0 +1,100 @@
+.hirdeteshtml{
+    margin: 0;
+    min-height: 100% !important;
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hird-float-left{
+    width: 48%;
+    float:left;
+}
+.hird-float-right{
+    width: 48%;
+    float:right;
+}
+.hirdetes-header{
+	text-align: center;
+}
+.hirdetes-text{
+  margin: 10px;
+}
+.hirdetes-input{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  font-size: 17px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+.hirdetes-input:focus{
+  background-color: #ddd;
+  outline: none;
+}
+.hirdetes-submit {
+  background-color: #4CAF50;
+  width: 48%;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  opacity: 0.8;
+  float: right;
+}
+.hirdetes-submit:hover {
+  opacity: 1;
+}
+.container {
+  padding: 15px;
+}
+.form-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fefefe;
+  opacity: 0.85;
+  margin: auto;
+  border: 1px solid #888;
+  border-radius: 30px;
+  width: 50%;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.kis-hr{
+    margin-right: 800px;
+    border-bottom: 2px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+.radio-sor{
+    display: flex;
+    margin: 30px 0;
+}
+.szelesseg{
+    width: 100%;
+    text-align: center;
+    margin: 0 25px;
+}
+.szelesseg2{
+    width: 27.5%;
+    text-align: center;
+    margin: 0 25px;
+}
+.egyeb-input{
+    width: 48%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    float: left;
+}
+.overflow{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

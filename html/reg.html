@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LG Cars</title>
+    <link rel="icon" href="./img/auto.jpg">
+    <link rel="stylesheet" href="../style/header_footer.css">
+    <link rel="stylesheet" href="../style/register.css">
+    <link rel="stylesheet" href="../style/modal.css">
+</head>
+<body class="reghtml">
+    <header>
+        <img class="img" src="../img/animation.png" alt="Autó">
+        <ul class="nav-lista">
+            <li class="web-name">LG Cars</li>
+            <li class="lista-elemek"><a class="links login-gomb" href="../index.html#modal-fooldal">Belépés</a></li>
+            <li class="lista-elemek aktiv"><a class="links" href="reg.html">Regisztráció</a></li>
+            <li class="lista-elemek"><a class="links" href="visszajel.html">Visszajelzés</a></li>
+            <li class="lista-elemek"><a class="links" href="piac.html">Piac</a></li>
+            <li class="lista-elemek"><a class="links" href="hirdetes.html">Hirdetés</a></li>
+            <li class="lista-elemek"><a class="links" href="../index.html">Főoldal</a></li>
+        </ul>
+    </header>
+    <form class="form-content ">
+        <div class="container">
+          <h1 class="reg-header">Regisztráció</h1>
+            <p class="reg-header reg-text"><b>Töltse ki az adatokat</b></p>
+            <hr>
+            <label for="name"><b>Név:</b></label>
+            <input type="text" class = "reg-input" id="name" name="name" placeholder="Vezetéknév Keresztnév" required>
+                
+            <label for="date"><b>Születési dátum:</b></label>
+            <input type="date" class = "reg-input" id="date" name="date" min="1900-01-01" max="2021-12-31" required>
+    
+            <label for="sex"><b>Nem:</b></label>
+            <select id="sex" class = "reg-input" name="sex" required>
+                <option hidden value="">Válasszon</option>
+                <option value="male">Férfi</option>
+                <option value="woman">Nő</option>
+                <option value="other">Egyéb</option>
+            </select>
+    
+            <label for="email"><b>Email cím:</b></label>
+            <input type="email" class = "reg-input" id="email" name="email" placeholder="valami@valami.com" required>
+    
+            <label for="reg-pwd"><b>Jelszó: (legalább 8 karakter, 1 kisbetű, nagybetű és szám)</b></label>
+            <input type="password" class = "reg-input" id="reg-pwd" name="reg-pwd" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" placeholder="Minta123" required>
+    
+            <label for="reg-pwd-again"><b>Jelszó újra:</b></label>
+            <input type="password" class = "reg-input" id="reg-pwd-again" name="reg-pwd-again" placeholder="Minta123" required>
+    
+            <div class="reg-gombok">
+                <input type="reset" class="reg-input reg-submit" id="reset" value="Visszaállítás">
+                <input type="submit" class = "reg-input reg-submit" id="register" value="Regisztráció">   
+            </div>
+            <div>
+                <b>Van már fiókja?</b>
+                <a href="../index.html#modal-fooldal"><strong>Jelentkezzen be</strong></a>
+            </div>
+        </div>
+      </form>
+    <footer class="footer">
+        <img class="img2" src="../img/animation.png" alt="Autó">
+        <p>&copy; LG Cars 2021  |  Made by Original LG</p>
+    </footer>
+</body>
+</html>

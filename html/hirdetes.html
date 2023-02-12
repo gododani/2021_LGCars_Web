@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LG Cars</title>
+    <link rel="icon" href="./img/auto.jpg">
+    <link rel="stylesheet" href="../style/header_footer.css">
+    <link rel="stylesheet" href="../style/hirdetes.css">
+    <link rel="stylesheet" href="../style/modal.css">
+</head>
+<body class="hirdeteshtml">
+    <header>
+        <img class="img" src="../img/animation.png" alt="Autó">
+        <ul class="nav-lista">
+            <li class="web-name">LG Cars</li>
+            <li class="lista-elemek"><a class="links login-gomb" href="../index.html#modal-fooldal">Belépés</a></li>
+            <li class="lista-elemek"><a class="links" href="reg.html">Regisztráció</a></li>
+            <li class="lista-elemek"><a class="links" href="visszajel.html">Visszajelzés</a></li>
+            <li class="lista-elemek"><a class="links" href="piac.html">Piac</a></li>
+            <li class="lista-elemek aktiv"><a class="links" href="hirdetes.html">Hirdetés</a></li>
+            <li class="lista-elemek"><a class="links" href="../index.html">Főoldal</a></li>
+        </ul>
+    </header>
+    <form class="form-content">
+        <div class="container">
+          <h1 class="hirdetes-header">Hirdetés feladása</h1>
+                <p class="hirdetes-header hirdetes-text"><b>Töltse ki az adatokat</b></p>
+          <hr>
+          <div>
+              <div class="hird-float-left">
+                <label for="hirdetes-nev"><b>Név:</b></label>
+                <input type="text" class="hirdetes-input" id="hirdetes-nev" name="hirdetes-nev" placeholder="Vezetéknév Keresztnév" required>
+                <label for="hird-atvetel"><b>Átadási hely:</b></label>
+                <input type="text" class = "hirdetes-input" id="hird-atvetel" name="hird-atvetel" placeholder="6724 Szeged, Sárosi utca 11" required>
+                
+              </div>
+              <div class="hird-float-right">
+                <label for="hird-telefonszam"><b>Telefonszám:</b></label>
+                <input type="tel" class = "hirdetes-input" id="hird-telefonszam" name="hird-telefonszam" pattern="[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{4}" placeholder="06-30-123-4567" required>
+                <label for="hird-email"><b>Email cím:</b></label>
+                <input type="email" class = "hirdetes-input" id="hird-email" name="hird-email" placeholder="valami@valami.com" required>
+              </div>
+              <label for="hird-kepfelt"><b>Kép feltöltése:</b></label>
+              <br>
+              <input type="file" class = "hirdetes-input" id="hird-kepfelt" name="hird-kepfelt" style="width: 30%;" multiple required>
+          </div>
+          <div>
+            <label><b>Gépjármű típusa:</b></label>
+            <br>
+            <br>
+            <div class="radio-sor">
+                <div class="szelesseg">
+                    <label>Motorkerékpár</label>
+                    <input type="radio" name="gep-tipusok" id="motorkerekpar">
+                </div>
+                <div class="szelesseg">
+                    <label>Személyautó</label>
+                    <input type="radio" name="gep-tipusok" id="szemelyauto">
+                </div>
+                <div class="szelesseg">
+                    <label>Haszonjármű</label>
+                    <input type="radio" name="gep-tipusok" id="haszonjarmu">
+                </div>
+            </div>
+            <div class="radio-sor">
+                <div class="szelesseg">
+                    <label>Kishaszonjármű</label>
+                    <input type="radio" name="gep-tipusok" id="kishaszonjarmu">
+                </div>
+                <div class="szelesseg">
+                    <label>Pótkocsi/Utánfutó</label>
+                    <input type="radio" name="gep-tipusok" id="potkocsiutanfuto">
+                </div>
+                <div class="szelesseg">
+                    <label>Munkagép</label>
+                    <input type="radio" name="gep-tipusok" id="munkagep">
+                </div>
+            </div>
+            <div class="radio-sor">
+                <div class="szelesseg">
+                    <label>Autóbusz</label>
+                    <input type="radio" name="gep-tipusok" id="autobusz">
+                </div>
+                <div class="szelesseg">
+                    <label>Lakókocsi</label>
+                    <input type="radio" name="gep-tipusok" id="lakokocsi">
+                </div>
+                <div class="szelesseg">
+                    <label>Hajó</label>
+                    <input type="radio" name="gep-tipusok" id="hajo">
+                </div>
+            </div>
+            <div class="radio-sor">
+                <div class="szelesseg2">
+                    <label>Egyéb</label>
+                    <input type="radio" name="gep-tipusok" id="egyeb">
+                </div>
+            </div>
+            <div>
+                <input class="egyeb-input" type="text" name="egyeb-input" id="egyeb-input">
+                <input type="submit" class = "hirdetes-input hirdetes-submit" value="Feladás">
+            </div>
+          </div>
+        </div>
+      </form>
+    <footer class="footer">
+        <img class="img2" src="../img/animation.png" alt="Autó">
+        <p>&copy; LG Cars 2021  |  Made by Original LG</p>
+    </footer>
+</body>
+</html>

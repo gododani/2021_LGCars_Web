@@ -1,0 +1,103 @@
+.main-content{
+    width: 70%;
+    min-height: 100%;
+    float: left;
+}
+.aside{
+    width: 27%;
+    height: 800px;
+    background-color:azure;
+    border-radius: 20px;
+    border: 2px solid black;
+    float: left;
+    margin: 30px 25px;
+}
+.sec-art{
+    width: 100%;
+}
+.article{
+    width: 50% !important;
+    background-color: azure;
+    height: 530px;
+    float: left;
+    padding: 30px;
+    line-height: 25px;
+}
+.section{
+    width: 50%;
+    height: 530px;
+    float: left;
+    padding: 30px;
+}
+.multi-column{
+    column-count: 2;
+}
+.info{
+    background-color: antiquewhite;
+    min-height: 250px;
+    border-radius: 20px;
+    margin: 25px 10px;
+    padding: 20px;
+}
+.center{    
+    text-align: center;
+}
+video{
+    outline: none;
+}
+.kepvaltas{
+    width: 600px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: kepek 20s infinite 0s;
+}
+h2{
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.info>p{
+    white-space: pre;
+}
+@media (max-width: 1700px){
+    .main-content{
+        width: 100%;
+    }
+    .aside{
+        width: 98%;
+        margin: 20px 10px 66px 10px;
+    }
+}
+@media (max-width: 1300px){
+    .section{
+        width: 100% !important;
+    }
+    .article{
+        width: 100% !important;
+    }
+}
+@keyframes kepek{
+    0%{
+        background-image: url('../img/mercedes.jpg');
+    }
+    17%{
+        background-image: url('../img/opel.jpg');
+    }
+    34%{
+        background-image: url('../img/ford.jpg');
+    }
+    51%{
+        background-image: url('../img/audi.jpg');
+    }
+    68%{
+        background-image: url('../img/porche.jpg');
+    }
+    85%{
+        background-image: url('../img/honda.jpg');
+    }
+    100%{
+        background-image: url('../img/mercedes.jpg');
+    }
+}
